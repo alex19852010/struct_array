@@ -1,7 +1,0 @@
-# ninja log v5
-1	1247	7029858421466452	CMakeFiles/struct_array.dir/main.cpp.obj	a088bff5f7b73e1a
-1265	1749	7029858426365007	struct_array.exe	ebef97b3b93377d4
-5	1295	7029864677770280	CMakeFiles/struct_array.dir/main.cpp.obj	a088bff5f7b73e1a
-1297	2421	7029864688906928	struct_array.exe	ebef97b3b93377d4
-5	1346	7029865183497587	CMakeFiles/struct_array.dir/main.cpp.obj	a088bff5f7b73e1a
-1347	1889	7029865188721860	struct_array.exe	ebef97b3b93377d4
