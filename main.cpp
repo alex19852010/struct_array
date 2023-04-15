@@ -2,62 +2,36 @@
 #include <vector>
 
 using namespace std;
+struct change
+{
+    string name;
+    string color;
+    int year;
+};
+
 
 int main() {
 
-  int tenant [10][10];
+    vector <change> car;
+    int amount_car;
 
-  for(int i = 0; i < 10; i ++)
-  {
-      for(int j = 0; j < 10; j ++)
-      {
-           tenant[i][j] = 2;
-      }
-  }
+    cout << "enter amount car:";
+    cin >> amount_car;
 
-  for(int i = 0; i < 10; i ++)
-  {
-      tenant[i][i] = 0;
-  }
-    for(int i = 0; i < 10; i ++)
+    for(int i = 0; i < amount_car; i ++)
     {
-        tenant[i][9 - i] = 0;
+        car.push_back(change());
+        cout << "enter name car";
+        cin >> car[i].name;
+        cout << "enter color car";
+        cin >> car[i].color;
+        cout << "enter year car";
+        cin >> car[i].year;
     }
 
 
-  for(int i = 0; i < 10; i ++)
-  {
-      tenant[i][0] = 1;
-
-      for(int i = 0; i < 10; i ++)
-      {
-          tenant[i][9] = 1;
-
-          for(int j = 0; j < 10; j ++)
-          {
-              tenant[0][j] = 1;
-
-              for(int j = 0; j < 10; j ++)
-              {
-                  tenant[9][j] = 1;
-
-              }
-          }
-      }
-  }
-
-
-
-
-    for(int i = 0; i < 10; i ++)
+    for(int i = 0; i < amount_car; i ++)
     {
-        for(int j = 0; j < 10; j ++)
-        {
-            cout << tenant[i][j] << " ";
-        }
-        cout << endl;
+       cout << car[i].name << " " << car[i].color << " " << car[i].year << endl;
     }
-    cout << "hello world";
-
-    return 0;
 }
