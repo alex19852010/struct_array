@@ -34,4 +34,5 @@ int main() {
     {
        cout << car[i].name << " " << car[i].color << " " << car[i].year << endl;
     }
+    cout << "hello world";
 }
