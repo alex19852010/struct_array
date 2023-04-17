@@ -2,38 +2,22 @@
 #include <vector>
 
 using namespace std;
-struct change
-{
-    string name;
-    string color;
-    int year;
-};
 
+void inner_string (string string_2)
+{
+    int i = 0;
+    while(string_2[i] != '\0')
+    {
+        cout << string_2[i];
+        i ++;
+    }
+}
 
 int main() {
 
-    vector <change> car;
-    int amount_car;
+  string my_string = "attention everyone,\r\n it's very dangerous here,\r\n please leave the room!!!";
 
-    cout << "enter amount car:";
-    cin >> amount_car;
-
-    for(int i = 0; i < amount_car; i ++)
-    {
-        car.push_back(change());
-        cout << "enter name car";
-        cin >> car[i].name;
-        cout << "enter color car";
-        cin >> car[i].color;
-        cout << "enter year car";
-        cin >> car[i].year;
-    }
+  inner_string(my_string);
 
 
-    for(int i = 0; i < amount_car; i ++)
-    {
-       cout << car[i].name << " " << car[i].color << " " << car[i].year << endl;
-    }
-
-    cout << "Don't I have nothing";
 }
